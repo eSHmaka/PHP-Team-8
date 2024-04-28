@@ -1,8 +1,10 @@
-<?php include "./components/header.php"; ?>
+<!-- header section -->
+ <?php include "./components/header.php"; ?>
+<!-- end header section -->
 
     <section class="submited_section">
     <?php
-// all POST variables are set
+    // all POST variables are set
 if (
     isset($_POST["patient_name"]) &&
     isset($_POST["doctor_name"]) &&
@@ -31,4 +33,6 @@ if (
 ?>
     </section>
 
-    <?php include "./components/footer.php"; ?>
+<!-- footer section -->
+  <?php include "./components/footer.php"; ?>
+<!-- end footer section -->

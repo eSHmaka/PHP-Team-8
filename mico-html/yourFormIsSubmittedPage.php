@@ -1,5 +1,6 @@
-<?php include "./components/header.php"; ?>
-
+<!-- header section -->
+  <?php include "./components/header.php"; ?>
+<!-- end header section -->
     <section class="submited_section">
   
     <?php
@@ -10,5 +11,6 @@
 
     </section>
 
-
-<?php include "./components/footer.php"; ?>
+<!-- footer section -->
+  <?php include "./components/footer.php"; ?>
+<!-- end footer section -->
