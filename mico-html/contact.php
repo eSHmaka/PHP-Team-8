@@ -12,18 +12,18 @@
       <div class="row">
         <div class="col-md-7">
           <div class="form_container">
-          <form action="./components/yourFormIsSubmittedPage.php" method="post">
+          <form action="yourFormIsSubmittedPage.php" method="post">
               <div>
-                <input type="username" placeholder="Full Name" required/>
+                <input name="name" type="username" placeholder="Full Name" required/>
               </div>
               <div>
-                <input type="email" placeholder="Email" required />
+                <input name="email" type="email" placeholder="Email" required />
               </div>
               <div>
-                <input type="text" placeholder="Phone Number" required />
+                <input name="number" type="text" placeholder="Phone Number" required />
               </div>
               <div>
-                <input type="text" class="message-box" placeholder="Message" required />
+                <input name="text" type="text" class="message-box" placeholder="Message" required />
               </div>
               <div class="btn_box">
                 <button>

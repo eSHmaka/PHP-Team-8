@@ -14,6 +14,11 @@
 
   <title>Mico</title>
 
+  <?php 
+  include "../variables/massives.php" ;
+  include "../variables/function.php" ;
+  ?>
+
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -35,13 +40,9 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
-  <?php 
-    require "php functions/navigation.php";
-  ?>
-
 </head>
 
-<body class="sub_page">
+<body>
 
   <div class="hero_area">
     <!-- header section strats -->
@@ -73,10 +74,10 @@
       <div class="header_bottom">
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg custom_nav-container ">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="index.php">
               <img src="images/logo.png" alt="">
             </a>
-            </a>
+
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class=""> </span>
@@ -84,11 +85,11 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <div class="d-flex mr-auto flex-column flex-lg-row align-items-center">
-                <ul class="navbar-nav  ">
+                <ul class="navbar-nav">
                   <?php 
-                    navigation();
+                    Navigation($NavigationList);
                   ?>
-                </ul>
+              </ul>
               </div>
               <div class="quote_btn-container">
                 <a href="">
@@ -115,30 +116,39 @@
       </div>
     </header>
     <!-- end header section -->
-  </div>
 
     <section>
     <?php
-        $patient_name = $_POST["patient_name"];
-        $doctor_name = $_POST["doctor_name"];
-        $department_name = $_POST["department_name"];
-        $phone_number = $_POST["phone_number"];
-        $symptoms = $_POST["symptoms"];
-        $date = $_POST["date"];
-        
+// all POST variables are set
+if (
+    isset($_POST["patient_name"]) &&
+    isset($_POST["doctor_name"]) &&
+    isset($_POST["department_name"]) &&
+    isset($_POST["phone_number"]) &&
+    isset($_POST["symptoms"]) &&
+    isset($_POST["date"])
+) {
+    // Retrieve form data
+    $patient_name = $_POST["patient_name"];
+    $doctor_name = $_POST["doctor_name"];
+    $department_name = $_POST["department_name"];
+    $phone_number = $_POST["phone_number"];
+    $symptoms = $_POST["symptoms"];
+    $date = $_POST["date"];
 
-        echo "<p><strong>Patient Name:</strong> $patient_name</p>";
-        echo "<p><strong>Doctor Name:</strong> $doctor_name</p>";
-        echo "<p><strong>Department Name:</strong> $department_name</p>";
-        echo "<p><strong>Phone Number:</strong> $phone_number</p>";
-        echo "<p><strong>Symptoms:</strong> $symptoms</p>";
-        echo "<p><strong>Date:</strong> $date</p>";
-
-    ?>
+    // Output the form data
+    echo "<p><strong>Patient Name:</strong> $patient_name</p>";
+    echo "<p><strong>Doctor Name:</strong> $doctor_name</p>";
+    echo "<p><strong>Department Name:</strong> $department_name</p>";
+    echo "<p><strong>Phone Number:</strong> $phone_number</p>";
+    echo "<p><strong>Symptoms:</strong> $symptoms</p>";
+    echo "<p><strong>Date:</strong> $date</p>";
+}
+?>
     </section>
 
-  <!-- info section -->
-  <section class="info_section ">
+   <!-- info section -->
+ <section class="info_section ">
     <div class="container">
       <div class="info_top">
         <div class="info_logo">
@@ -161,66 +171,18 @@
             <h5>
               Address
             </h5>
-            <div class="info_contact">
-              <a href="">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span>
-                  Location
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
-                  Call +01 1234567890
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-envelope"></i>
-                <span>
-                  demo@gmail.com
-                </span>
-              </a>
-            </div>
-            <div class="social_box">
-              <a href="">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-              </a>
-            </div>
+            <?php InfoContact($InfoContacts) ?>
           </div>
           <div class="col-md-6 col-lg-3">
             <div class="info_links">
               <h5>
                 Useful link
               </h5>
-              <div class="info_links_menu">
-                <a href="index.html">
-                  Home
-                </a>
-                <a href="about.html">
-                  About
-                </a>
-                <a href="treatment.html">
-                  Treatment
-                </a>
-                <a href="doctor.html">
-                  Doctors
-                </a>
-                <a class="active" href="testimonial.html">
-                  Testimonial
-                </a>
-                <a href="contact.html">
-                  Contact us
-                </a>
-              </div>
+              <ul class="info_links_menu">
+                <?php 
+                  Navigation($NavigationList);
+                ?>
+              </ul>
             </div>
           </div>
           <div class="col-md-6 col-lg-3">
@@ -228,24 +190,7 @@
               <h5>
                 LATEST POSTS
               </h5>
-              <div class="post_box">
-                <div class="img-box">
-                  <img src="images/post1.jpg" alt="">
-                </div>
-                <p>
-                  Normal
-                  distribution
-                </p>
-              </div>
-              <div class="post_box">
-                <div class="img-box">
-                  <img src="images/post2.jpg" alt="">
-                </div>
-                <p>
-                  Normal
-                  distribution
-                </p>
-              </div>
+              <?php PostBox1($PostBox1)?>
             </div>
           </div>
           <div class="col-md-6 col-lg-3">
@@ -253,24 +198,7 @@
               <h5>
                 News
               </h5>
-              <div class="post_box">
-                <div class="img-box">
-                  <img src="images/post3.jpg" alt="">
-                </div>
-                <p>
-                  Normal
-                  distribution
-                </p>
-              </div>
-              <div class="post_box">
-                <div class="img-box">
-                  <img src="images/post4.png" alt="">
-                </div>
-                <p>
-                  Normal
-                  distribution
-                </p>
-              </div>
+              <?php PostBoxi($PostBoxi)?>
             </div>
           </div>
         </div>

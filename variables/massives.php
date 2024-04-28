@@ -287,3 +287,4 @@ $sliderData = [
       'active' => false
   ]
 ];
+

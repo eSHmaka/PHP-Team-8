@@ -1,3 +1,4 @@
+<!-- contact section -->
 <section class="contact_section layout_padding-bottom">
     <div class="container">
       <div class="heading_container">
@@ -8,18 +9,18 @@
       <div class="row">
         <div class="col-md-7">
           <div class="form_container">
-            <form action="">
+          <form action="yourFormIsSubmittedPage.php" method="post">
               <div>
-                <input type="text" placeholder="Full Name" />
+                <input name="name" type="username" placeholder="Full Name" required/>
               </div>
               <div>
-                <input type="email" placeholder="Email" />
+                <input name="email" type="email" placeholder="Email" required />
               </div>
               <div>
-                <input type="text" placeholder="Phone Number" />
+                <input name="number" type="text" placeholder="Phone Number" required />
               </div>
               <div>
-                <input type="text" class="message-box" placeholder="Message" />
+                <input name="text" type="text" class="message-box" placeholder="Message" required />
               </div>
               <div class="btn_box">
                 <button>
@@ -37,3 +38,4 @@
       </div>
     </div>
   </section>
+  <!-- end contact section -->
