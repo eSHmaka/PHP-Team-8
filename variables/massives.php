@@ -255,4 +255,35 @@ $PostBoxi = [
     "img" => "images/post2.jpg",
     "text" => "Normal distribution",
   ],
-];              
+];    
+
+
+
+// by keti
+
+$sliderData = [
+  [
+      'title' => 'Mico',
+      'subtitle' => 'Hospital',
+      'content' => 'when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to',
+      'link' => '#',
+      'image' => 'images/slider-img.jpg',
+      'active' => true
+  ],
+  [
+      'title' => 'Mico',
+      'subtitle' => 'Hospital2',
+      'content' => 'when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to',
+      'link' => '#',
+      'image' => 'images/slider-img.jpg',
+      'active' => false
+  ],
+  [
+      'title' => 'Mico',
+      'subtitle' => 'Hospital3',
+      'content' => 'when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to',
+      'link' => '#',
+      'image' => 'images/slider-img.jpg',
+      'active' => false
+  ]
+];

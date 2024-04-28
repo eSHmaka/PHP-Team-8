@@ -4,7 +4,9 @@
       </div>
       <div id="customCarousel1" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-          <?php Karusel($carousel)?>
+          <?php 
+            createSlider($sliderData);
+          ?>
         </div>
         <div class="carousel_btn-box">
           <a class="carousel-control-prev" href="#customCarousel1" role="button" data-slide="prev">
