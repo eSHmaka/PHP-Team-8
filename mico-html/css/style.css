@@ -1,8 +1,17 @@
+html {
+  height: 100%;
+}
+
+.submited_section {
+  padding: 100px 0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #0c0c0c;
   background-color: #ffffff;
   overflow-x: hidden;
+  height: 100%;
 }
 
 .layout_padding {
@@ -66,10 +75,14 @@ a:focus {
 /*header section*/
 .hero_area {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .sub_page .hero_area {
-  height: auto;
+  height: 100%;
 }
 .sub_page .header_section {
   margin-top: 0;
@@ -218,6 +231,7 @@ a:focus {
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
   padding-top: 45px;
   padding-bottom: 75px;
+  position: relative;
 }
 .slider_section .dot_design {
   position: absolute;

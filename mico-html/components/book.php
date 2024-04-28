@@ -14,17 +14,25 @@
               <div class="form-group col-lg-4">
                 <label for="inputDoctorName">Doctor's Name</label>
                 <select name="doctor_name" class="form-control wide" id="inputDoctorName">
-                  <option value="Jenni ">Jenni </option>
-                  <option value="Morco ">Morco </option>
-                  <option value="Hennry ">Hennry </option>
+                  <?php 
+                    $i = 0;
+                    while ($i < count($Doctors)) {
+                      echo '<option value="'. $Doctors[$i]. '">'. $Doctors[$i]. '</option>';
+                      $i++;
+                    }
+                  ?>
                 </select>
               </div>
               <div class="form-group col-lg-4">
                 <label for="inputDepartmentName">Department's Name</label>
                 <select name="department_name" class="form-control wide" id="inputDepartmentName">
-                  <option value="Saburtalo ">Saburtalo </option>
-                  <option value="Vake ">Vake </option>
-                  <option value="Home ">Home </option>
+                  <?php
+                    $i = 0; 
+                    do {
+                      echo '<option value="'. $Departments[$i]. '">'. $Departments[$i]. '</option>';
+                      $i++;
+                    } while ($i < sizeof($Departments));
+                  ?>
                 </select>
               </div>
             </div>

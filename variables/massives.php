@@ -252,7 +252,7 @@ $PostBoxi = [
     "text" => "Normal distribution",
   ],
   [
-    "img" => "images/post2.jpg",
+    "img" => "images/post4.png",
     "text" => "Normal distribution",
   ],
 ];    
@@ -288,3 +288,32 @@ $sliderData = [
   ]
 ];
 
+// Options Array
+
+$Doctors = [
+  "select Doctor",
+  "Dr. Amanda Chen",
+  "Dr. Benjamin Hayes",
+  "Dr. Elena Rodriguez",
+  "Dr. Jonathan Patel",
+  "Dr. Sophia Nguyen",
+  "Dr. Michael Thompson",
+  "Dr. Emily Wilson",
+  "Dr. Alexander Kim",
+  "Dr. Jasmine Gupta",
+  "Dr. William Carter"
+];
+
+$Departments = [
+  "select Department",
+  "Cardiology",
+  "Orthopedics",
+  "Neurology",
+  "Pediatrics",
+  "Oncology",
+  "Gynecology",
+  "Dermatology",
+  "Emergency Medicine",
+  "Psychiatry",
+  "Urology"
+];
