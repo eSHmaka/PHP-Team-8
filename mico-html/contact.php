@@ -12,7 +12,7 @@
       <div class="row">
         <div class="col-md-7">
           <div class="form_container">
-          <form action="./components/pass.php" method="post">
+          <form action="./components/yourFormIsSubmittedPage.php" method="post">
               <div>
                 <input type="username" placeholder="Full Name" required/>
               </div>
