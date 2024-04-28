@@ -9,33 +9,33 @@
             <div class="form-row ">
               <div class="form-group col-lg-4">
                 <label for="inputPatientName">Patient Name </label>
-                <input name="patient_name" type="text" class="form-control" id="inputPatientName" placeholder="">
+                <input name="patient_name" type="text" class="form-control" id="inputPatientName" placeholder="Name" required>
               </div>
               <div class="form-group col-lg-4">
                 <label for="inputDoctorName">Doctor's Name</label>
                 <select name="doctor_name" class="form-control wide" id="inputDoctorName">
-                  <option value="Normal distribution ">Normal distribution </option>
-                  <option value="Normal distribution ">Normal distribution </option>
-                  <option value="Normal distribution ">Normal distribution </option>
+                  <option value="Jenni ">Jenni </option>
+                  <option value="Morco ">Morco </option>
+                  <option value="Hennry ">Hennry </option>
                 </select>
               </div>
               <div class="form-group col-lg-4">
                 <label for="inputDepartmentName">Department's Name</label>
                 <select name="department_name" class="form-control wide" id="inputDepartmentName">
-                  <option value="Normal distribution ">Normal distribution </option>
-                  <option value="Normal distribution ">Normal distribution </option>
-                  <option value="Normal distribution ">Normal distribution </option>
+                  <option value="Saburtalo ">Saburtalo </option>
+                  <option value="Vake ">Vake </option>
+                  <option value="Home ">Home </option>
                 </select>
               </div>
             </div>
             <div class="form-row ">
               <div class="form-group col-lg-4">
                 <label for="inputPhone">Phone Number</label>
-                <input type="number" name="phone_number" class="form-control" id="inputPhone" placeholder="XXXXXXXXXX">
+                <input type="number" name="phone_number" class="form-control" id="inputPhone" placeholder="XXXXXXXXXX" required>
               </div>
               <div class="form-group col-lg-4">
                 <label for="inputSymptoms">Symptoms</label>
-                <input type="text" name="symptoms" class="form-control" id="inputSymptoms" placeholder="">
+                <input type="text" name="symptoms" class="form-control" id="inputSymptoms" placeholder="ვკვდები" required>
               </div>
               <div class="form-group col-lg-4">
                 <label for="inputDate">Choose Date </label>

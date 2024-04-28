@@ -143,70 +143,10 @@ if (
     echo "<p><strong>Phone Number:</strong> $phone_number</p>";
     echo "<p><strong>Symptoms:</strong> $symptoms</p>";
     echo "<p><strong>Date:</strong> $date</p>";
+    echo "<h1>ჯავშანი მიღებულია</h1>";
 }
 ?>
     </section>
-
-   <!-- info section -->
- <section class="info_section ">
-    <div class="container">
-      <div class="info_top">
-        <div class="info_logo">
-          <a href="">
-            <img src="images/logo.png" alt="">
-          </a>
-        </div>
-        <div class="info_form">
-          <form action="">
-            <input type="email" placeholder="Your email">
-            <button>
-              Subscribe
-            </button>
-          </form>
-        </div>
-      </div>
-      <div class="info_bottom layout_padding2">
-        <div class="row info_main_row">
-          <div class="col-md-6 col-lg-3">
-            <h5>
-              Address
-            </h5>
-            <?php InfoContact($InfoContacts) ?>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="info_links">
-              <h5>
-                Useful link
-              </h5>
-              <ul class="info_links_menu">
-                <?php 
-                  Navigation($NavigationList);
-                ?>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="info_post">
-              <h5>
-                LATEST POSTS
-              </h5>
-              <?php PostBox1($PostBox1)?>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="info_post">
-              <h5>
-                News
-              </h5>
-              <?php PostBoxi($PostBoxi)?>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end info_section -->
-
 
   <!-- footer section -->
   <footer class="footer_section">
